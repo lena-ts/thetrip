@@ -1,0 +1,1 @@
+!function(n){function r(e){if(t[e])return t[e].exports;var o=t[e]={exports:{},id:e,loaded:!1};return n[e].call(o.exports,o,o.exports,r),o.loaded=!0,o.exports}var t={};return r.m=n,r.c=t,r.p="",r(0)}([function(n,r,t){n.exports=t(1)},function(n,r){"use strict";$(document).ready(function(){$(".navbar-brand").click(function(){$(".navbar-brand").hide()})})}]);
