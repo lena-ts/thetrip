@@ -1,0 +1,48 @@
+@import "_variables";
+
+//border radius
+@mixin border-radius($radius){
+ -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius; 
+          border-radius: $radius;
+}
+
+//transitions
+@mixin transition($seconds){
+	-webkit-transition:$seconds ease-out;
+	-moz-transition:$seconds ease-out;
+	-ms-transition:$seconds ease-out;
+	transition:$seconds ease-out;	
+}
+
+//transform
+@mixin transform($scale){
+	-webkit-transform:$scale;
+	-moz-transform:$scale;
+	-ms-transform:$scale;
+	transform:$scale;	
+}
+
+//box-shadow
+@mixin box-shadow($shadow){
+	-webkit-box-shdow: $shadow;
+	-moz-box-shadow: $shadow;
+	box-shadow: $shadow;	
+}
+
+//small text
+@mixin small-text{
+	color: $small-text-color;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+//btn gradient
+@mixin btn-gradient{
+	background: #27cdd5; /* Old browsers */
+	background: -moz-linear-gradient(left, #27cdd5 0%, #2ec8be 48%, #35c4a5 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #27cdd5 0%,#2ec8be 48%,#35c4a5 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #27cdd5 0%,#2ec8be 48%,#35c4a5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27cdd5', endColorstr='#35c4a5',GradientType=1 ); /* IE6-9 */
+}
